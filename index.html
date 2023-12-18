@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mice and Mystics</title>
+</head>
+<body>
+    <div id="main">
+    <div class="player-card" style="background-image: url('./assets/players/Collin.webp');">
+        <div class="info">
+            <span class="player-name">Collin</span>
+            <span class="player-type">Warrior</span>
+            <br><br>
+        </div>
+        <div class="stats">
+            <span>Roaches Killed</span><span class="roaches value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Rats Killed</span><span class="rats value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Elite Rats Killed</span><span class="elite value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Centipedes Killed</span><span class="centipedes value" contenteditable="true">0</span><button class="increment"onclick='increment(this)'>+</button>
+            <span>Spiders Killed</span><span class="spiders value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+        </div>
+        <br>
+        <span class="abilities-label">Abilities</span>
+        <div class="abilities">
+        </div>
+        <button class="add-ability" onclick="addAbility(this)">+</button>
+    </div>
+
+    <div class="player-card" style="background-image: url('./assets/players/Filch.webp');">
+        <div class="info">
+            <span class="player-name">Filch</span>
+            <span class="player-type">Scamp</span>
+            <br><br>
+        </div>
+        <div class="stats">
+            <span>Roaches Killed</span><span class="roaches value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Rats Killed</span><span class="rats value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Elite Rats Killed</span><span class="elite value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Centipedes Killed</span><span class="centipedes value" contenteditable="true">0</span><button class="increment"onclick='increment(this)'>+</button>
+            <span>Spiders Killed</span><span class="spiders value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+        </div>
+        <br>
+        <span class="abilities-label">Abilities</span>
+        <div class="abilities">
+        </div>
+        <button class="add-ability" onclick="addAbility(this)">+</button>
+    </div>
+
+    <div class="player-card" style="background-image: url('./assets/players/Maginos.webp');">
+        <div class="info">
+            <span class="player-name">Maginos</span>
+            <span class="player-type">Mystic</span>
+            <br><br>
+        </div>
+        <div class="stats">
+            <span>Roaches Killed</span><span class="roaches value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Rats Killed</span><span class="rats value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Elite Rats Killed</span><span class="elite value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Centipedes Killed</span><span class="centipedes value" contenteditable="true">0</span><button class="increment"onclick='increment(this)'>+</button>
+            <span>Spiders Killed</span><span class="spiders value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+        </div>
+        <br>
+        <span class="abilities-label">Abilities</span>
+        <div class="abilities">
+        </div>
+        <button class="add-ability" onclick="addAbility(this)">+</button>
+    </div>
+
+    <div class="player-card" style="background-image: url('./assets/players/Tilda.jpg');">
+        <div class="info">
+            <span class="player-name">Tilda</span>
+            <span class="player-type">Healer</span>
+            <br><br>
+        </div>
+        <div class="stats">
+            <span>Roaches Killed</span><span class="roaches value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Rats Killed</span><span class="rats value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Elite Rats Killed</span><span class="elite value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Centipedes Killed</span><span class="centipedes value" contenteditable="true">0</span><button class="increment"onclick='increment(this)'>+</button>
+            <span>Spiders Killed</span><span class="spiders value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+        </div>
+        <br>
+        <span class="abilities-label">Abilities</span>
+        <div class="abilities">
+        </div>
+        <button class="add-ability" onclick="addAbility(this)">+</button>
+    </div>    
+
+    <div class="player-card" style="background-image: url('./assets/players/Lily.webp');">
+        <div class="info">
+            <span class="player-name">Lily</span>
+            <span class="player-type">Archer</span>
+            <br><br>
+        </div>
+        <div class="stats">
+            <span>Roaches Killed</span><span class="roaches value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Rats Killed</span><span class="rats value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Elite Rats Killed</span><span class="elite value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Centipedes Killed</span><span class="centipedes value" contenteditable="true">0</span><button class="increment"onclick='increment(this)'>+</button>
+            <span>Spiders Killed</span><span class="spiders value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+        </div>
+        <br>
+        <span class="abilities-label">Abilities</span>
+        <div class="abilities">
+        </div>
+        <button class="add-ability" onclick="addAbility(this)">+</button>
+    </div>
+
+    <div class="player-card" style="background-image: url('./assets/players/Nez.webp');">
+        <div class="info">
+            <span class="player-name">Nez</span>
+            <span class="player-type">Warrior / Tinkerer</span>
+            <br><br>
+        </div>
+        <div class="stats">
+            <span>Roaches Killed</span><span class="roaches value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Rats Killed</span><span class="rats value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Elite Rats Killed</span><span class="elite value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+            <span>Centipedes Killed</span><span class="centipedes value" contenteditable="true">0</span><button class="increment"onclick='increment(this)'>+</button>
+            <span>Spiders Killed</span><span class="spiders value" contenteditable="true">0</span><button class="increment" onclick='increment(this)'>+</button>
+        </div>
+        <br>
+        <span class="abilities-label">Abilities</span>
+        <div class="abilities">
+        </div>
+        <button class="add-ability" onclick="addAbility(this)">+</button>
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
