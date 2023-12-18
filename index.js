@@ -128,3 +128,8 @@ function increment(ele) {
     index = Array.prototype.indexOf.call(ele.parentElement.children, ele)
     ele.parentElement.children[index-1].innerHTML = Number(ele.parentElement.children[index-1].innerHTML)+1
 }
+
+setInterval(function(){
+    console.log('autosaving...')
+    updatePlayerStats()
+},60000)
